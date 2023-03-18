@@ -9,12 +9,18 @@
 //=================================================================
 
 
-
+/// <summary>
+/// Метод создаёт заполненную матрицу
+/// </summary>
+/// <param name="rows">Строчки</param>
+/// <param name="cols">Столбцы</param>
+/// <param name="depth">Глубина</param>
+/// <param name="min">Мин. значение</param>
+/// <param name="max">Максимальное значение</param>
+/// <returns>Готовая матрица</returns>
 int[,,] ThreeDimensionalArray(int rows, int cols, int depth, int min, int max)
 {
-    // Чтобы создать двумерный массив мы создаём некую матрицу
-    int[,,] matrix = new int[rows, cols, depth];
-    // наш двумерный массив проходим сначала по строчкам, потом по столбцам
+    int[,,] matrix = new int[rows, cols, depth];    
     for (int i = 0; i < rows; i++)
     {
         for (int j = 0; j < cols; j++)
